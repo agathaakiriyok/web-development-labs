@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эрмитаж</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo"><img src="img/Hermitage_logo.png" alt="Логотип Эрмитажа" width="100"></div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+                <li class="nav__item"><a href="#exhibitions" class="nav__link">Выставки</a></li>
+                <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="welcome" id="welcome">
+            <h1 class="welcome__title">Добро пожаловать в <strong>Эрмитаж</strong></h1>
+            <p class="welcome__subtitle"><em>Один из крупнейших музеев мира</em></p>
+        </section>
+
+       <section class="gallery" id="gallery">
+    <h2 class="gallery__title">Галерея</h2>
+
+    <!-- Слайдер -->
+    <div class="gallery__slider slider">
+        <button class="slider__btn slider__btn--prev">&lt;</button>
+        <div class="slider__track">
+            <div class="slider__item"><img src="img/madonna.jpg" alt="Мадонна Литта" width="200"></div>
+            <div class="slider__item"><img src="img/rembrandt.jpg" alt="Возвращение блудного сына" width="200"></div>
+            <div class="slider__item"><img src="img/castle.jpeg" alt="Гостинная зимнего дворца" width="200"></div>
+            <div class="slider__item"><img src="img/statue.jpeg" alt="Античная статуя" width="200"></div>
+        </div>
+        <button class="slider__btn slider__btn--next">&gt;</button>
+    </div>
+
+    <section class="exhibitions" id="exhibitions">
+        <h2 class="exhibitions__title">Ближайшие выставки</h2>
+        <ul class="exhibitions__list">
+            <li class="exhibitions__item">
+                <h3 class="exhibitions__name">Выставка 1</h3>
+                <p class="exhibitions__date">10 ноября – 20 декабря</p>
+                <a href="ticket.html" class="exhibitions__btn">Купить билет</a>
+            </li>
+            <li class="exhibitions__item">
+                <h3 class="exhibitions__name">Выставка 2</h3>
+                <p class="exhibitions__date">1 декабря – 15 января</p>
+                <a href="all-exhibitions.html" class="exhibitions__show-more">Показать больше</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <h2 class="contacts__title">Свяжитесь с нами</h2>
+        <form class="contacts__form">
+            <label class="contacts__label">Имя: <input type="text" name="name"></label>
+            <label class="contacts__label">Email: <input type="email" name="email"></label>
+            <label class="contacts__label">Сообщение: <textarea name="message"></textarea></label>
+            <button type="submit" class="contacts__btn">Отправить</button>
+        </form>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© 2025 Государственный Эрмитаж</p>
+        <p class="footer__text">Дворцовая площадь, 2, Санкт-Петербург</p>
+    </footer>
+</body>
+</html>
