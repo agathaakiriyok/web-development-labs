@@ -25,28 +25,42 @@
             <p class="welcome__subtitle"><em>Один из крупнейших музеев мира</em></p>
         </section>
 
-       <section class="gallery" id="gallery">
-    <h2 class="gallery__title">Галерея</h2>
+        <section class="gallery" id="gallery">
+            <h2 class="gallery__title">Галерея</h2>
+            <div class="gallery__slider slider">
 
-    <!-- Слайдер -->
-    <div class="gallery__slider slider">
-        <button class="slider__btn slider__btn--prev">&lt;</button>
-        <div class="slider__track">
-            <div class="slider__item"><img src="img/madonna.jpg" alt="Мадонна Литта" width="200"></div>
-            <div class="slider__item"><img src="img/rembrandt.jpg" alt="Возвращение блудного сына" width="200"></div>
-            <div class="slider__item"><img src="img/castle.jpeg" alt="Гостинная зимнего дворца" width="200"></div>
-            <div class="slider__item"><img src="img/statue.jpeg" alt="Античная статуя" width="200"></div>
-        </div>
-        <button class="slider__btn slider__btn--next">&gt;</button>
-    </div>
+                <button class="slider__btn slider__btn--prev">&lt;</button>
+                <div class="slider__track">
+                    <figure class="slider__item">
+                        <img src="img/madonna.jpg" alt="Мадонна Литта">
+                        <figcaption class="slider__caption">«Мадонна Литта» — Леонардо да Винчи</figcaption>
+                    </figure>
+                    <figure class="slider__item">
+                        <img src="img/rembrandt.jpg" alt="Возвращение блудного сына">
+                        <figcaption class="slider__caption">«Возвращение блудного сына» — Рембрандт</figcaption>
+                    </figure>
+                    <figure class="slider__item">
+                        <img src="img/mona-lisa.png" alt="Мона Лиза">
+                        <figcaption class="slider__caption">«Мона Лиза» — Леонардо да Винчи</figcaption>
+                    </figure>
+                    <figure class="slider__item">
+                        <img src="img/dama.jpg" alt="Дама с горностаем">
+                        <figcaption class="slider__caption">«Дама с горностаем» — Леонардо да Винчи</figcaption>
+                    </figure>
+                </div>
+                <button class="slider__btn slider__btn--next">&gt;</button>
+            </div>
+        </section>
 
+ 
     <section class="exhibitions" id="exhibitions">
         <h2 class="exhibitions__title">Ближайшие выставки</h2>
         <ul class="exhibitions__list">
             <li class="exhibitions__item">
                 <h3 class="exhibitions__name">Выставка 1</h3>
                 <p class="exhibitions__date">10 ноября – 20 декабря</p>
-                <a href="ticket.html" class="exhibitions__btn">Купить билет</a>
+                <button class="exhibitions__btn buy-ticket-btn">Купить билет</button>
+                
             </li>
             <li class="exhibitions__item">
                 <h3 class="exhibitions__name">Выставка 2</h3>
