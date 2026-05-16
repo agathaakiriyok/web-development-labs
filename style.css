@@ -91,6 +91,13 @@ p {
 
 .nav__link:hover {
     color: #C2E5DD;
+    transform: scale(1.08);
+}
+
+.nav a.active {
+    font-weight: 700;
+    border-bottom: 2px solid #165E55;
+    color: #165E55;
 }
 
 .welcome {
@@ -400,7 +407,7 @@ p {
     font-size: 1.5rem;
     text-align: left;
 }
-/
+
 .exhibitions-page__description {
     display: flex;
     text-align: left;
@@ -434,6 +441,52 @@ p {
 .exhibitions__btn:hover {
     background-color: #0f4039;
 }
+
+.tickets {
+    padding: 40px 0;
+    background-color: #F7F1E1;
+    border-top: 2px solid #165E55;
+}
+
+.tickets__form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #165E55;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tickets__label {
+    display: block;
+    margin: 10px 0;
+    color: #165E55;
+    font-weight: 500;
+}
+
+.tickets__label input,
+.tickets__label textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #165E55;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tickets__btn {
+    display: block;
+    margin: 15px auto 0;
+    background-color: #165E55;
+    color: #F7F1E1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 
 .modal {
     position: fixed;
