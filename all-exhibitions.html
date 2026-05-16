@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все выставки — Эрмитаж</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__logo"><a href="index.html"><img src="img/Hermitage_logo.png" alt="Логотип Эрмитажа" width="100"></a></div>
+</header>
+
+<main class="main">
+    <section class="exhibitions-page">
+        <h1 class="exhibitions-page__title">Все выставки</h1>
+        <ul class="exhibitions-page__list">
+            <li class="exhibitions-page__item">
+                <h3 class="exhibitions-page__name">Выставка 1</h3>
+                <p class="exhibitions-page__date">10 ноября – 20 декабря</p>
+                <button class="exhibitions-page__btn">Купить билет</button>
+            </li>
+            <li class="exhibitions-page__item">
+                <h3 class="exhibitions-page__name">Выставка 2</h3>
+                <p class="exhibitions-page__date">1 декабря – 15 января</p>
+                <button class="exhibitions-page__btn">Купить билет</button>
+            </li>
+            <li class="exhibitions-page__item">
+                <h3 class="exhibitions-page__name">Выставка 3</h3>
+                <p class="exhibitions-page__date">5 декабря – 25 декабря</p>
+                <button class="exhibitions-page__btn">Купить билет</button>
+            </li>
+            <li class="exhibitions-page__item">
+                <h3 class="exhibitions-page__name">Выставка 4</h3>
+                <p class="exhibitions-page__date">12 декабря – 30 декабря</p>
+                <button class="exhibitions-page__btn">Купить билет</button>
+            </li>
+            <li class="exhibitions-page__item">
+                <h3 class="exhibitions-page__name">Выставка 5</h3>
+                <p class="exhibitions-page__date">20 декабря – 10 января</p>
+                <button class="exhibitions-page__btn">Купить билет</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Модальное окно для оформления билетов -->
+    <div class="modal modal--hidden">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <h3 class="modal__title">Оформление билетов</h3>
+            <form class="modal__form">
+                <label class="modal__label">Количество:
+                    <input type="number" name="quantity" min="1" value="1">
+                </label>
+                <label class="modal__label">Цена за билет:
+                    <input type="text" name="price" value="500 ₽" readonly>
+                </label>
+                <button type="submit" class="modal__submit">Оплатить</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <p class="footer__text">© 2025 Государственный Эрмитаж</p>
+</footer>
+</body>
+</html>
