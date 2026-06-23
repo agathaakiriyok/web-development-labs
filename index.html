@@ -7,6 +7,7 @@
     <title>Эрмитаж</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/main.js" defer></script>
+    <script src="js/users.js" defer></script>
 </head>
 
 <body>
@@ -139,7 +140,33 @@
                     </tbody>
                 </table>
             </div>
-        </section>
+        </section> 
+
+        <section class="users" id="users">
+    <div class="wrapper">
+        <h2 class="users__title">Посетители музея</h2>
+
+        <button class="users__btn" id="loadUsersBtn">
+            Загрузить посетителей
+        </button>
+
+       <div class="users__loader users__loader--hidden" id="usersLoader"></div>
+
+        <ul class="users__list users__list--hidden" id="usersList"></ul>
+
+        <p class="users__error users__error--hidden" id="usersError"></p>
+
+    </div>
+
+    <template id="userTemplate">
+        <li class="users__item">
+            <h3 class="users__name"></h3>
+            <p class="users__email"></p>
+            <p class="users__city"></p>
+        </li>
+    </template>
+</section>
+
     </main>
 
     <footer class="footer">
